@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_application/views/home/home_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -53,29 +54,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const TestPage(),
-    );
-  }
-}
-
-class TestPage extends StatefulWidget {
-  const TestPage({super.key});
-
-  @override
-  State<TestPage> createState() => _TestPageState();
-}
-
-class _TestPageState extends State<TestPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('TODO App'),
-        elevation: 1.0,
-      ),
-      body: Center(
-        child: Text("Hello"),
-      ),
+      home: const HomeView(),
     );
   }
 }
