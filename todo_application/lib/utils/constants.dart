@@ -1,0 +1,1 @@
+String lottieUrl = 'assets/lottie/Animation - 1735140770617.json';
